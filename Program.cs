@@ -6,9 +6,16 @@ namespace CounterApp
     {
         static void Main(string[] args)
         {
-            for (int index = 0; index <= 10; index++)
+            for (int counter = 0; counter <= 10; counter++)
             {
-                Console.WriteLine($"The index is {index}");
+                if(counter%2==0)
+                {
+                    Console.WriteLine($"The counter is in number {counter}, an Even Number");    
+                }
+                else 
+                {
+                    Console.WriteLine($"The counter is in number {counter}, an Odd Number");
+                }
             }
         }
     }
